@@ -1,7 +1,6 @@
 package com.digitalinnovationone.live.model;
 
 import lombok.*;
-import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -25,6 +24,7 @@ public class Movement {
         private long userId;
     }
     @EmbeddedId
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private MovementId movementId;
     private LocalDateTime dateEntry;
     private LocalDateTime dateOut;

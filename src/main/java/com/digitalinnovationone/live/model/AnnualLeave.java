@@ -2,9 +2,7 @@ package com.digitalinnovationone.live.model;
 
 import lombok.*;
 
-import javax.persistence.Embeddable;
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -28,6 +26,7 @@ public class AnnualLeave {
         private long userId;
     }
     @EmbeddedId
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private AnnualLeaveId annualLeaveId;
     private LocalDateTime dateWorked;
     private BigDecimal amountHours;
