@@ -45,7 +45,7 @@ public class SwaggerConfig {
                 .version("1.0.0")
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
-                .contact(new Contact("DIO", "https://web.digitalinnovation.one", "contato@digitalinnovationone.com.br"))
+                .contact(new Contact("ARPITECH", "https://www.linkedin.com/in/sandro-arpi-76518343/", "sandroarpi72@gmail.com"))
                 .build();
     }
 }

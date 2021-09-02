@@ -1,9 +1,7 @@
 package com.digitalinnovationone.live.controller;
 
 import com.digitalinnovationone.live.model.Company;
-import com.digitalinnovationone.live.model.WorkJourney;
 import com.digitalinnovationone.live.service.CompanyService;
-import com.digitalinnovationone.live.service.JourneyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -39,7 +37,7 @@ public class CompanyController {
     }
 
     @DeleteMapping(value = "/{companyId}")
-    public ResponseEntity<WorkJourney> deleteById(@PathVariable Long companyId){
+    public ResponseEntity<Company> deleteById(@PathVariable Long companyId){
         companyService.deleteCompany(companyId);
         return ResponseEntity.noContent().build();
     }
