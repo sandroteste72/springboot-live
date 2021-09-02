@@ -31,7 +31,12 @@ public class MovementController {
         return ResponseEntity.ok(movementService.findById(movementId).orElseThrow (() -> new NoSuchElementException("Not found!")));
     }
 
-    @DeleteMapping("/{movementId}")
+    @PutMapping
+    public Movement updateMovement (@RequestBody Movement movement) {
+        return movementService.save(movement);
+    }
+
+    @DeleteMapping(value = "/{movementId}")
     public ResponseEntity<Movement> deleteById (@PathVariable Long movementId) {
         movementService.deleteMovement(movementId);
         return ResponseEntity.noContent().build();
