@@ -36,16 +36,6 @@ public class UserCategoryController {
         return userCategoryService.updateCategory(userCategory);
     }
 
-//    @DeleteMapping("/{journeyId}")
-//    public ResponseEntity<WorkJourney> deleteByID(@PathVariable("journeyId") Long journeyId) throws Exception {
-//        try {
-//            journeyService.deleteJourney(journeyId);
-//        } catch (Exception e){
-//            System.out.println(e.getMessage());
-//        }
-//        return ResponseEntity.noContent().build();
-//    }
-
     @DeleteMapping(value = "/{categoryId}")
     public ResponseEntity<UserCategory> deleteById(@PathVariable Long categoryId){
         userCategoryService.deleteCategory(categoryId);
