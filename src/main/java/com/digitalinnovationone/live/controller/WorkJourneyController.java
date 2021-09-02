@@ -36,13 +36,19 @@ public class WorkJourneyController {
         return journeyService.updateJourney(workJourney);
     }
 
-    @DeleteMapping("/{idJourney}")
-    public ResponseEntity deleteByID(@PathVariable("idJourney") Long journeyId) throws Exception {
-        try {
-            journeyService.deleteJourney(journeyId);
-        } catch (Exception e){
-            System.out.println(e.getMessage());
-        }
-        return (ResponseEntity<WorkJourney>) ResponseEntity.ok();
+//    @DeleteMapping("/{journeyId}")
+//    public ResponseEntity<WorkJourney> deleteByID(@PathVariable("journeyId") Long journeyId) throws Exception {
+//        try {
+//            journeyService.deleteJourney(journeyId);
+//        } catch (Exception e){
+//            System.out.println(e.getMessage());
+//        }
+//        return ResponseEntity.noContent().build();
+//    }
+
+    @DeleteMapping(value = "/{journeyId}")
+    public ResponseEntity<WorkJourney> deleteById(@PathVariable Long journeyId){
+        journeyService.deleteJourney(journeyId);
+        return ResponseEntity.noContent().build();
     }
 }
