@@ -1,8 +1,6 @@
 package com.digitalinnovationone.live.service;
 
-import com.digitalinnovationone.live.model.Company;
 import com.digitalinnovationone.live.model.Occurrence;
-import com.digitalinnovationone.live.repository.CompanyRepository;
 import com.digitalinnovationone.live.repository.OccurrenceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

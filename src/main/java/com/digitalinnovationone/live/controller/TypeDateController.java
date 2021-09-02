@@ -1,9 +1,6 @@
 package com.digitalinnovationone.live.controller;
 
-import com.digitalinnovationone.live.model.Company;
 import com.digitalinnovationone.live.model.TypeDate;
-import com.digitalinnovationone.live.model.WorkJourney;
-import com.digitalinnovationone.live.service.CompanyService;
 import com.digitalinnovationone.live.service.TypeDateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

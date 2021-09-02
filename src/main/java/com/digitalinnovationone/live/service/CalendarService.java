@@ -1,7 +1,6 @@
 package com.digitalinnovationone.live.service;
 
 import com.digitalinnovationone.live.model.Calendar;
-import com.digitalinnovationone.live.model.Company;
 import com.digitalinnovationone.live.repository.CalendarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

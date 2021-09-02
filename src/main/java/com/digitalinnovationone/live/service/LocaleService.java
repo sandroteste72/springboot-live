@@ -1,8 +1,6 @@
 package com.digitalinnovationone.live.service;
 
 import com.digitalinnovationone.live.model.Locale;
-import com.digitalinnovationone.live.model.WorkJourney;
-import com.digitalinnovationone.live.repository.JourneyRepository;
 import com.digitalinnovationone.live.repository.LocaleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

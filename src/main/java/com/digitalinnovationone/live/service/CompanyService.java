@@ -1,9 +1,7 @@
 package com.digitalinnovationone.live.service;
 
 import com.digitalinnovationone.live.model.Company;
-import com.digitalinnovationone.live.model.WorkJourney;
 import com.digitalinnovationone.live.repository.CompanyRepository;
-import com.digitalinnovationone.live.repository.JourneyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
