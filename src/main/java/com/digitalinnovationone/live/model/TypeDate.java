@@ -3,6 +3,8 @@ package com.digitalinnovationone.live.model;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Getter
@@ -14,6 +16,7 @@ import javax.persistence.Id;
 @Entity
 public class TypeDate {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String description;
 }
