@@ -2,6 +2,7 @@ package com.digitalinnovationone.live.service;
 
 import com.digitalinnovationone.live.model.Movement;
 import com.digitalinnovationone.live.repository.MovementRepository;
+import com.digitalinnovationone.live.repository.OccurrenceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,8 +12,12 @@ import java.util.Optional;
 @Service
 public class MovementService {
 
-    @Autowired
     MovementRepository movementRepository;
+
+    @Autowired
+    public MovementService(MovementRepository movementRepository) {
+        this.movementRepository = movementRepository;
+    }
 
     public Movement save(Movement movement){
         return movementRepository.save(movement);

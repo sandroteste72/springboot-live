@@ -33,7 +33,7 @@ public class MovementController {
 
     @PutMapping
     public Movement updateMovement (@RequestBody Movement movement) {
-        return movementService.save(movement);
+        return movementService.updateMovement(movement);
     }
 
     @DeleteMapping(value = "/{movementId}")

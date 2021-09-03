@@ -24,7 +24,6 @@ public class Movement {
         private long userId;
     }
     @EmbeddedId
-    //@GeneratedValue
     private MovementId movementId;
     private LocalDateTime dateEntry;
     private LocalDateTime dateOut;
